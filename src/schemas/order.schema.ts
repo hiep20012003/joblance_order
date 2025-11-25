@@ -16,15 +16,15 @@ export const orderCreateSchema = z.object({
 
   gigTitle: z.string().min(1, { message: 'Gig title is required' }),
   gigDescription: z.string().min(1, { message: 'Gig description is required' }),
-  gigCoverImage: z.url(),
+  gigCoverImage: z.string(),
 
   buyerUsername: z.string().min(1, { message: 'Buyer username is required' }),
   buyerEmail: z.email({ message: 'Buyer email is required' }),
-  buyerPicture: z.url().nullable().optional(),
+  buyerPicture: z.string().optional(),
 
   sellerUsername: z.string().min(1, { message: 'Seller username is required' }),
   sellerEmail: z.email({ message: 'Seller email is required' }),
-  sellerPicture: z.url().nullable().optional(),
+  sellerPicture: z.string().optional(),
 
   expectedDeliveryDays: z.number({ message: 'Expected delivery days is required' }).int(),
 
