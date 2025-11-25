@@ -24,9 +24,9 @@
     "seed:create": "dotenv -- node scripts/seed create --folder src/db/seeders"
   },
   "dependencies": {
-    "@hiep20012003/joblance-shared": "latest",
     "@elastic/opentelemetry-node": "^1.6.0",
     "@faker-js/faker": "^10.0.0",
+    "@hiep20012003/joblance-shared": "^0.0.4",
     "amqplib": "^0.10.9",
     "axios": "^1.12.2",
     "cloudinary": "^2.7.0",
